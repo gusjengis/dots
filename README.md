@@ -4,7 +4,7 @@ I wanted a place to tie together my Nix corfig repos and give an overview. I've
 become quite proud of this setup. Just think of this page as blog post.
 
 First, I'd like to explain what Nix is and why it's so awesome. Nix is a whole
-cloud of things, it's a package manager, a build system, a programming
+cloud of things: it's a package manager, a build system, a programming
 language, an operating system, a way of life, and probably more that I haven't
 learned about yet. The important thing is what it allows me to do, which is
 install and configure my system and programs declaratively. To understand what
