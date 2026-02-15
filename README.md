@@ -77,6 +77,26 @@ new machines. As I descirbed before, I just run a graphical install wizard,
 reboot, connect to wifi, curl and run the script with one command, let it do
 it's thing, reboot again, and everything is back. 
 
+### High-level system map
+
+```text
+fresh NixOS install
+        |
+        v
+nix-install-script (bootstrap script)
+        |
+        +--> /etc/nix-modules/      <- nix-modules repo (shared system modules)
+        |
+        +--> /etc/nixos/            <- local machine config (hardware + module toggles)
+        |
+        +--> ~/.home-manager/       <- .home-manager repo (user programs + dotfiles + scripts)
+```
+
+- `nix-install-script`: creates the base layout on a fresh system and pulls in the repos.
+- `nix-modules`: shared NixOS modules used across all machines.
+- `/etc/nixos`: machine-specific NixOS config for hardware and local choices.
+- `.home-manager`: user-level packages, configs, scripts, and repo sync logic.
+
 ### Repo syncing 
 
 My home-manager repo contains a few scripts that I use to sync all of my repos
