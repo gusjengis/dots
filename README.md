@@ -43,9 +43,9 @@ from just using my personal setup for work.
 
 I have 3 primary repos that I use in the setup of my system:
 
+- [nix-install-script](https://github.com/gusjengis/nix-install-script)
 - [nix-modules](https://github.com/gusjengis/nix-modules)
 - [.home-manager](https://github.com/gusjengis/.home-manager)
-- [nix-install-script](https://github.com/gusjengis/nix-install-script)
 
 The `nix-modules` repo contains my system level configurations that I want to
 share between all of my machines. I have it split into modules so that locally
@@ -100,12 +100,11 @@ nix-install-script (bootstrap script)
 ### Repo syncing 
 
 My home-manager repo contains a few scripts that I use to sync all of my repos
-across machines. I have a few files where I define lists of pairs of locations
-on the system and urls for repositories I want cloned. When I run my sync_repos
-script with the '''sync''' alias, all repos are cloned or synced with pull, and
-any that have uncommitted changes or conflicting local commits are skipped.
-Repos that fail to sync spawn notifications that remind me to reconcile with
-upstream.
+across machines. I have a few files where I define lists of locations and repo
+urls. When I run my sync_repos script with the '''sync''' alias, all repos are
+cloned or synced with pull, and any that have uncommitted changes or
+conflicting local commits are skipped. Repos that fail to sync spawn
+notifications that remind me to reconcile with upstream.
 
 ### Interop 
 
