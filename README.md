@@ -52,7 +52,7 @@ share between all of my machines. I have it split into modules so that locally
 each system can turn on and off certain modules depending on it's purpose. This
 repo lives in the /etc/nix-modules/ directory. Just next to it, there is a
 local-only /etc/nixos/ folder. I back this up as well, but it is machine
-specifc. I contains an automatically generated file that installs whatever the
+specific. It contains an automatically generated file that installs whatever the
 hell is needed to make that specific hardware work (I never need to touch or
 look at it), and a configuration file that I have basically empty by default.
 That file is where I declare which modules are enabled on that system, as well
@@ -66,7 +66,11 @@ like the desktop environment. Any modules it does enable will still sync.
 The `.home-manager` repo is similar, modules and all, but it configures my home
 directory. This does a lot of the heavy lifting. It contains most of my
 programs, all of my raw config files, it contains many important scripts, and
-it's where I declare all of the repos that I want on my system.
+it's where I declare all of the repos that I want on my system. This folder has
+a couple gitignored machine specifc files, modules.nix and local.nix. The
+former is obvious enough, it's where I set any non-default module booleans I
+want on the machine, the latter is just a spot for misc local-only config,
+which I have yet to use for much.
 
 The `nix-install-script` repo contains a script that I use to install Nix on
 new machines. As I descirbed before, I just run a graphical install wizard,
