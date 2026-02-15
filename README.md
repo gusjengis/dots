@@ -1,6 +1,6 @@
 # dots
 
-I wanted a place to tie together my Nix corfig repos and give an overview. I've
+I wanted a place to tie together my Nix config repos and give an overview. I've
 become quite proud of this setup. Just think of this page as blog post.
 
 First, I'd like to explain what Nix is and why it's so awesome. Nix is a whole
