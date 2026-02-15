@@ -62,8 +62,8 @@ share between all of my machines. I have it split into modules so that locally
 each system can turn on and off certain modules depending on it's purpose. This
 repo lives in the /etc/nix-modules/ directory. Just next to it, there is a
 local-only /etc/nixos/ folder. I back this up as well, but it is machine
-specific. It contains an automatically generated file that installs whatever the
-hell is needed to make that specific hardware work (I never need to touch or
+specific. It contains two files. an automatically generated file that installs whatever the
+hell is needed to make the local hardware work (I never need to touch or
 look at it), and a configuration file that I have basically empty by default.
 That file is where I declare which modules are enabled on that system, as well
 as anything I want to add that's specific to that hardware (Ex: Keybinds with
