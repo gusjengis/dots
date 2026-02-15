@@ -7,16 +7,21 @@ First, I'd like to explain what Nix is and why it's so awesome. Nix is a whole
 cloud of things: it's a package manager, a build system, a programming
 language, an operating system, a way of life, and probably more that I haven't
 learned about yet. The important thing is what it allows me to do, which is
-install and configure my system and programs declaratively. To understand what
-that means, I should juxtapose declarative with imperative. To do something
-imperatively means to explicity state how things are done step-by-step. This is
-the standard paradigm of setting up software. To do things declaratively is the
-opposite, it means to declare what is to be done, not how. What this means for
-setting up a computer is that with Nix, I'm able to simply state a list of
-programs and the settings I want them to have, and I don't need to worry about
-how that is done, Nix just handles it. The really cool thing about this is that
-it allows me to, in a single file (or in many for organization), describe how I
-want my computer to be setup, run a command, and boom, let thy will be done!
+install and configure my system and programs declaratively. 
+
+
+To understand what that means, I should juxtapose declarative with imperative.
+To do something imperatively means to explicity state how things are done
+step-by-step. This is the standard paradigm of setting up software. To do
+things declaratively is the opposite, it means to declare what is to be done,
+not how. What this means for setting up a computer is that with Nix, I'm able
+to simply state a list of programs and the settings I want them to have, and I
+don't need to worry about how that is done, Nix just handles it. The really
+cool thing about this is that it allows me to, in a single file (or in many for
+organization), describe how I want my computer to be setup, run a command, and
+boom, let thy will be done! 
+
+
 There are a few huge benefits here. One, the way I've configured my computer is
 not fragile and dependent on the continued existence of my physical hardware.
 My computer could melt in a fire, and as long as I have my configuration backed
@@ -24,15 +29,18 @@ up online, I can have everything back in as long as it takes me to run through
 the OS installation wizard, connect to wifi, and run a script. This allows me
 to accumulate a lifetime of customizations, building and building until I reach
 computing Nirvana. I never have to start over with a fresh machine, or fear
-that anything else will reset me. Maybe equally important, Nix configuration
-files can by synced across as many computers as you like, and used to exactly
-recreate your system. I currently have 5 computers running my Nix setup, so a
-change I make to one is instantly applied to all 5. If I install and configure
-a program once, it's done, forever. Instantly reproduced across all systems.
-All of this makes customizing my computer no longer a waste of time, but a
-permanent investment in my developer tools and productivity. More and more all
-the time, I am psyched to use my machine, it's always becoming more refined,
-more pleasing to use, more capable. 
+that anything else will reset me. 
+
+
+Maybe equally important, Nix configuration files can by synced across as many
+computers as you like, and used to exactly recreate your system. I currently
+have 5 computers running my Nix setup, so a change I make to one is instantly
+applied to all 5. If I install and configure a program once, it's done,
+forever. All of this makes customizing my computer no longer a waste of time,
+but a permanent investment in my developer tools and productivity. More and more all the time, I am
+psyched to use my machine, it's always becoming more refined, more efficient,
+more pleasing to use, more capable.
+
 
 This really is a programmer's operating system, you're basically writing a
 program that builds your system, but now that I've learned to use it, there is
@@ -40,6 +48,8 @@ no operating system I've tried or heard of that doesn't seem silly by
 comparison. Not only is it great fun to tinker with, it's a serious tool for
 DevOps/IT. I hope to someday use this technology in my professional life, aside
 from just using my personal setup for work. 
+
+### Lay of the Land
 
 I have 3 primary repos that I use in the setup of my system:
 
